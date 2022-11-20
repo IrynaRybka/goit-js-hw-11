@@ -1,28 +1,119 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: #e7eaf6;
+  color: #113f67;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.container {
+  
+  // width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.search-form {
+
+  margin-left: auto;
+  margin-right: auto;
+ 
+  background: linear-gradient(to top,#e7eaf6 0%, #a2a8d3 100%);
+  padding: 40px 10px;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.input {
+padding: 10px;
+margin-right: 10px;
+border-color: #38598b;
+outline: 1px #38598b solid;
+border-radius: 5px;
+box-shadow: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #113f67;
+  border-color: transparent;
+  border-radius: 5px;
+  color:#e7eaf6;
+}
+
+.btn:hover, 
+.btn:focus {
+  background-color: #38598b;
+ 
+}
+
+.load-more {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  // max-width: 1200px;
+
+}
+.photo-card {
+  cursor: pointer;
+
+  max-width: 320px;
+  padding: 10px;
+  margin: 5px;
+  object-fit: cover;
+  border: #38598b 1px solid;
+  border-radius: 5px;
+ 
+}
+.photo-card:hover, 
+.photo-card:focus {
+  box-shadow:#a2a8d3 12px 6px 20px;
+}
+.img-container img{
+  width: 298px;
+  height: 198px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.info-item {
+  display: flex;
+  margin-right: 4px;
+  margin-top: 10px;
+
 }
